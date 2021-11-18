@@ -26,7 +26,6 @@ public class ApputilsPlugin implements FlutterPlugin, MethodCallHandler {
     public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
         channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "apputils");
         port = AppChannel.startServer(flutterPluginBinding.getApplicationContext());
-
         channel.setMethodCallHandler(this);
     }
 
