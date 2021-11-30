@@ -14,6 +14,7 @@ import io.flutter.plugin.common.MethodChannel.Result;
 /**
  * ApputilsPlugin
  */
+
 public class ApputilsPlugin implements FlutterPlugin, MethodCallHandler {
     /// The MethodChannel that will the communication between Flutter and native Android
     ///
